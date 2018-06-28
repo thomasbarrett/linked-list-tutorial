@@ -1,21 +1,60 @@
 #include "list.h"
 
-/* possible fileprivate helper functions */
+/*------------------ Begin: Fileprivate Helper Functions ---------------------*/
 
-// returns last node in a list of nodes
+/*
+ * Returns an initialized node
+ *
+ * @returns Node initialized with a `data` set to `num` and `next` set to NULL
+ */
+static Node node_create(int num) {
+
+}
+
+/*
+ * Returns the last node in a chain of linked nodes
+ *
+ * Precondition:
+ * - assume that self will never be null
+ *
+ * @param Node* const self: the head of the list
+ * @returns Node* the last node in the list
+ */
 static Node* node_get_last(Node* self) {
 
 }
 
-// returns node at specific index
+/*
+ * Gets an Node* from a specified index in linked list
+ *
+ * Precondition:
+ * - assume that self will never be null
+ * - assume that the index will never be out of bounds
+ *
+ * @param Node* const self: the linked list to access
+ * @param int index: the index to access
+ * @returns Node* the node at the specified index
+ */
 static Node* node_get(Node* self, int i) {
 
 }
 
-// destroys node
+/*
+ * Destroy all nodes that follow and free self
+ *
+ * Precondition:
+ * - assume that self will never be null
+ *
+ * @param Node* const self: the Node to destroy
+ */
 static void node_destroy(Node* self) {
 
 }
+
+/*------------------- End: Fileprivate Helper Functions ----------------------*/
+
+
+/*------------------- Begin: Public Interface Functions ----------------------*/
 
 /*
  * Returns an initialized list
@@ -78,3 +117,5 @@ int list_size(const List * const self) {
 void list_destroy(List* const self) {
   // TODO:
 }
+
+/*--------------------- End: Public Interface Functions ----------------------*/
