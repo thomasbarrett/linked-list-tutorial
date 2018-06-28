@@ -43,6 +43,9 @@ List list_create();
 /*
  * Adds an int to the end of a list and updates its size
  *
+ * Precondition:
+ * - assume that self will never be null
+ *
  * @param List* const self: the List to modify
  * @param int data: the data to add the list
  */
@@ -50,6 +53,10 @@ void list_add(List* const self, int data);
 
 /*
  * Gets an int from the given index of a list
+ *
+ * Precondition:
+ * - assume that self will never be null
+ * - assume that the index will never be out of bounds
  *
  * @param List* const self: the List to access
  * @param int index: the index to access
@@ -60,6 +67,9 @@ int list_get(const List* const self, int index);
 /*
  * Returns the size of the list
  *
+ * Precondition:
+ * - assume that self will never be null
+ *
  * @param const List* const self: the List to query
  * @returns int the size of the list
  */
@@ -67,6 +77,9 @@ int list_size(const List * const self);
 
 /*
  * Removes all data from a list and sets its size to 0
+ *
+ * Precondition:
+ * - assume that self will never be null
  *
  * @param List* const self: the List to modify
  */
