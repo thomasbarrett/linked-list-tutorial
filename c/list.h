@@ -1,3 +1,6 @@
+#ifndef INT_LIST_H
+#define INT_LIST_H
+
 /*
  * A single node in a linked list of int nodes. It both stores data and a
  * pointer to the next node in the list. If the pointer is null, it signifies
@@ -84,3 +87,5 @@ int list_size(const List * const self);
  * @param List* const self: the List to modify
  */
 void list_destroy(List* const self);
+
+#endif

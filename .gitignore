@@ -3,3 +3,7 @@
 
 # project binaries
 c/list_test
+
+# answer key
+c/list_thomas.c
+c/list_thomas
