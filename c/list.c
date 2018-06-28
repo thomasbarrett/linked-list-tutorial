@@ -1,5 +1,21 @@
 #include "list.h"
 
+/* possible fileprivate helper functions */
+
+// returns last node in a list of nodes
+static Node* node_get_last(Node* self) {
+
+}
+
+// returns node at specific index
+static Node* node_get(Node* self, int i) {
+
+}
+
+// destroys node
+static void node_destroy(Node* self) {
+
+}
 
 /*
  * Returns an initialized list
